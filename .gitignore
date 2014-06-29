@@ -4,8 +4,11 @@ syntax: glob
 *.pyc
 *.o
 *.suo
+*.swp
 *.ncb
 *.user
+*.dSYM
+*.xcodeproj/
 *.xcodeproj/*.mode1v*
 *.xcodeproj/*.pbxuser
 *.xcodeproj/TemplateIcon.icns
