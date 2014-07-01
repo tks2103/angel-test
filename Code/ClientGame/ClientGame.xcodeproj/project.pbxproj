@@ -53,6 +53,10 @@
 		34EB439E15A59E1000CF9CD8 /* libjasper.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EB439D15A59E1000CF9CD8 /* libjasper.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 		34EB43A915A59E2800CF9CD8 /* libjasper.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 34EB439D15A59E1000CF9CD8 /* libjasper.dylib */; };
 		34EB43AB15A59EA800CF9CD8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E76381133967E200BA9A3C /* libz.dylib */; };
+		D65D6BD01960B60D00F05BAA /* PlayerActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D65D6BCE1960B60D00F05BAA /* PlayerActor.cpp */; };
+		D65D6BD11960B60D00F05BAA /* PlayerActor.h in Headers */ = {isa = PBXBuildFile; fileRef = D65D6BCF1960B60D00F05BAA /* PlayerActor.h */; };
+		D65D6BDE1962249300F05BAA /* SwordActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D65D6BDC1962249200F05BAA /* SwordActor.cpp */; };
+		D65D6BDF1962249300F05BAA /* SwordActor.h in Headers */ = {isa = PBXBuildFile; fileRef = D65D6BDD1962249300F05BAA /* SwordActor.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +206,10 @@
 		34E76403133979E000BA9A3C /* libpng.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng.dylib; path = "../Angel/Libraries/DevIL-SDK-1.7.8/mac/lib/libpng.dylib"; sourceTree = "<group>"; };
 		34EB439D15A59E1000CF9CD8 /* libjasper.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjasper.dylib; path = "../Angel/Libraries/DevIL-SDK-1.7.8/mac/lib/libjasper.dylib"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ClientGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65D6BCE1960B60D00F05BAA /* PlayerActor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerActor.cpp; sourceTree = "<group>"; };
+		D65D6BCF1960B60D00F05BAA /* PlayerActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerActor.h; sourceTree = "<group>"; };
+		D65D6BDC1962249200F05BAA /* SwordActor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SwordActor.cpp; sourceTree = "<group>"; };
+		D65D6BDD1962249300F05BAA /* SwordActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwordActor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +258,10 @@
 				347CFFE411DC239200761E0E /* script_interface.i */,
 				347CFFF111DC243000761E0E /* build.lua */,
 				34974A310E2925BE0018A032 /* Main.cpp */,
+				D65D6BDC1962249200F05BAA /* SwordActor.cpp */,
+				D65D6BDD1962249300F05BAA /* SwordActor.h */,
+				D65D6BCE1960B60D00F05BAA /* PlayerActor.cpp */,
+				D65D6BCF1960B60D00F05BAA /* PlayerActor.h */,
 				34A18C990E284421001C79A5 /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -319,7 +331,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65D6BDF1962249300F05BAA /* SwordActor.h in Headers */,
 				34974A3B0E2926460018A032 /* stdafx.h in Headers */,
+				D65D6BD11960B60D00F05BAA /* PlayerActor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +523,8 @@
 			files = (
 				34974A330E2925BE0018A032 /* Main.cpp in Sources */,
 				34974A320E2925BE0018A032 /* stdafx.cpp in Sources */,
+				D65D6BD01960B60D00F05BAA /* PlayerActor.cpp in Sources */,
+				D65D6BDE1962249300F05BAA /* SwordActor.cpp in Sources */,
 				34A6E2A71527568800BEA400 /* AngelLuaWrapping.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
