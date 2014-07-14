@@ -1,6 +1,7 @@
 
 #include "stdafx.h"
 #include "PlayerActor.h"
+#include "EnemyActor.h"
 
 
 int main(int argc, char* argv[])
@@ -15,13 +16,11 @@ int main(int argc, char* argv[])
     TextActor *t = new TextActor("Console", "Yaaa", TXT_Center);
     theWorld.Add(t);
     PlayerActor *p = new PlayerActor();
-    PhysicsActor *pa = new PhysicsActor();
-    pa->SetColor(1.0, 0, 0);
-    pa->InitPhysics();
+    EnemyActor *e = new EnemyActor();
 
 
     theWorld.Add(p);
-    theWorld.Add(pa);
+    theWorld.Add(e);
 	// do all your setup first, because this function won't return until you're exiting
 	theWorld.StartGame();
 

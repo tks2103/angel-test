@@ -28,9 +28,9 @@ void SwordActor::AttachTo(PhysicsActor *actor) {
     Vector2 actorSize = actor->GetSize();
     Vector2 actorOffset(actorSize.X / 2.0f, actorSize.Y / 2.0f);
     Vector2 swordSize(2.4f, 0.4f);
-    Vector2 anchorA(actorSize.X / 2.0f, actorSize.Y / 6.0f);
+    Vector2 anchorA(actorSize.X / 2.0f, 0.0f);
     Vector2 anchorB(-SWORD_LENGTH * 1.2f, 0.0f);
-    float swingStart = -35;
+    float swingStart = -55;
     float swingEnd = 55;
 
     SetPosition(actorPosition.X + actorOffset.X + SWORD_LENGTH / 2.0f, actorPosition.Y + actorOffset.Y);
@@ -55,14 +55,14 @@ void SwordActor::AttachTo(PhysicsActor *actor) {
     jointDef.enableLimit = true;
     joint = (b2RevoluteJoint*)theWorld.GetPhysicsWorld().CreateJoint(&jointDef);
 
-    ApplyAngularImpulse(-0.3);
+    ApplyAngularImpulse(-0.5);
     theWorld.Add(this);
 }
 
 
 void SwordActor::Update(float dt) {
     swordTicks++;
-    if (swordTicks > 14) {
+    if (swordTicks > 20) {
         theWorld.GetPhysicsWorld().DestroyJoint(joint);
         theWorld.GetPhysicsWorld().DestroyBody(GetBody());
         joint = NULL;
